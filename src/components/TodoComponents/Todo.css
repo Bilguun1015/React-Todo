@@ -57,7 +57,6 @@ button{
   height: 30px;
   border: none;
   background: #CCCCCC;
-  border: 0.4px solid white;
 }
 button:hover{
   border: 1px solid black;

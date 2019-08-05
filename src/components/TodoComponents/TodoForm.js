@@ -4,7 +4,8 @@ class TodoForm extends React.Component {
     constructor() {
         super();
         this.state = {
-            task: ""
+            task: "",
+            isSaved: false
         };
     }
 
@@ -15,8 +16,16 @@ class TodoForm extends React.Component {
     }
 
     submitTask = e => {
+        const {task} = this.state;
+
         e.preventDefault();
         this.props.addTask(this.state.task)
+        localStorage.setItem(Date.now(), task);
+
+    }
+
+    componentDidMount(){
+        const task = localStorage.getItem('task');
     }
 
     render() {
