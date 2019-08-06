@@ -1,0 +1,66 @@
+.myList{
+  background: #a5a381;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+}
+
+.completed {
+    text-decoration: line-through;
+  }
+  .task{
+    width: 200px;
+    margin: 30px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style-type: none;
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:last-child {
+    border: none;
+  }
+  
+  li {
+    text-decoration: none;
+    color: #000;
+  
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+    display: block;
+    width: 200px;
+  }
+  
+  li:hover {
+    font-size: 30px;
+  }
+
+ .addButton{
+   width: 100%;
+ }
+
+button{
+  width:100%;
+  height: 30px;
+  border: none;
+  background: #CCCCCC;
+}
+button:hover{
+  border: 1px solid black;
+}
+input{
+  width:100%;
+}
